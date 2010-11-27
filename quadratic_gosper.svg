@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" width="400px" height="400px"
+     onload="showLSystem(quadraticGosper, 2, 'path', 'view')"
+     id="view" preserveAspectRatio="xMinYMin meet">
+
+<script type="text/ecmascript" xlink:href="l.js"/>
+
+<script type="text/ecmascript"><![CDATA[
+
+quadraticGosper = {
+  axiom: "-R",
+  directions: 4,
+  productions: {
+   L: "LL-R-R+L+L-R-RL+R+LLR-L+R+LL+R-LR-R-L+L+RR-",
+   R: "+LL-R-R+L+LR+L-RR-L-R+LRR-L-RL+L+R-R-L+L+RR"
+  },
+  symbols: {
+   L: "F",
+   R: "F"
+  }
+  
+}
+
+]]>
+</script>
+
+  <g stroke="black" stroke-width="0.1" stroke-linecap="round" fill="none">
+    <path id="path"/>
+  </g>
+
+</svg>

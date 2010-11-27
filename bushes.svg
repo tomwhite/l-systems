@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1000px" height="300px"
+     onload="onLoad()">
+
+<script type="text/ecmascript" xlink:href="l.js"/>
+
+<script type="text/ecmascript"><![CDATA[
+
+bush_a = {
+  axiom: "F",
+  directions: 14,
+  productions: {
+   F: "F[+F]F[-F]F"
+  }
+}
+
+bush_b = {
+  axiom: "F",
+  directions: 18,
+  productions: {
+   F: "F[+F]F[-F][F]"
+  }
+}
+
+bush_c = {
+  axiom: "F",
+  directions: 16,
+  productions: {
+   F: "FF-[-F+F+F]+[+F-F-F]"
+  }
+}
+
+bush_d = {
+  axiom: "X",
+  directions: 18,
+  productions: {
+   X: "F[+X]F[-X]+X",
+   F: "FF"
+  }
+}
+
+bush_e = {
+  axiom: "X",
+  directions: 14,
+  productions: {
+   X: "F[+X][-X]FX",
+   F: "FF"
+  }
+}
+
+bush_f = {
+  axiom: "X",
+  directions: 16,
+  productions: {
+   X: "F-[[X]+X]+F[+FX]-X",
+   F: "FF"
+  }
+}
+
+function onLoad() {
+  showLSystem(bush_a, 5, 'path_a', 'bush_a');
+  showLSystem(bush_b, 5, 'path_b', 'bush_b');
+  showLSystem(bush_c, 4, 'path_c', 'bush_c');
+  showLSystem(bush_d, 7, 'path_d', 'bush_d');
+  showLSystem(bush_e, 7, 'path_e', 'bush_e');
+  showLSystem(bush_f, 5, 'path_f', 'bush_f');
+}
+
+]]></script>
+
+  <g stroke="black" stroke-width="0.15" stroke-linecap="round" fill="none">
+    <svg id="bush_a" preserveAspectRatio="xMinYMin meet" width="300px" height="300px">
+      <path id="path_a"/>
+    </svg>
+  </g>
+  <g stroke="black" stroke-width="0.15" stroke-linecap="round" fill="none" transform="translate(120,0)">
+    <svg id="bush_b" preserveAspectRatio="xMinYMin meet" width="300px" height="300px">
+      <path id="path_b"/>
+    </svg>
+  </g>
+  <g stroke="black" stroke-width="0.15" stroke-linecap="round" fill="none" transform="translate(250,0)">
+    <svg id="bush_c" preserveAspectRatio="xMinYMin meet" width="300px" height="300px">
+      <path id="path_c"/>
+    </svg>
+  </g>
+  <g stroke="black" stroke-width="0.15" stroke-linecap="round" fill="none" transform="translate(450,0)">
+    <svg id="bush_d" preserveAspectRatio="xMinYMin meet" width="300px" height="300px">
+      <path id="path_d"/>
+    </svg>
+  </g>
+  <g stroke="black" stroke-width="0.15" stroke-linecap="round" fill="none" transform="translate(580,0)">
+    <svg id="bush_e" preserveAspectRatio="xMinYMin meet" width="300px" height="300px">
+      <path id="path_e"/>
+    </svg>
+  </g>
+  <g stroke="black" stroke-width="0.15" stroke-linecap="round" fill="none" transform="translate(700,0)">
+    <svg id="bush_f" preserveAspectRatio="xMinYMin meet" width="300px" height="300px">
+      <path id="path_f"/>
+    </svg>
+  </g>
+  
+</svg>

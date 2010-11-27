@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" width="400px" height="400px"
+     onload="showLSystem(lSystem, 2, 'path', 'view')"
+     id="view" preserveAspectRatio="xMinYMin meet">
+
+<script type="text/ecmascript" xlink:href="l.js"/>
+
+<script type="text/ecmascript"><![CDATA[
+
+lSystem = {
+  axiom: "F-F-F-F",
+  directions: 4,
+  productions: {
+   F: "F+FF-FF-F-F+F+FF-F-F+F+FF+FF-F"
+  }
+}
+
+]]>
+</script>
+
+  <g stroke="black" stroke-width="0.1" stroke-linecap="round" fill="none">
+    <path id="path"/>
+  </g>
+
+</svg>

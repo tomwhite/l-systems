@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1100px" height="300px" 
+     onload="onLoad()">
+
+<script type="text/ecmascript" xlink:href="l.js"/>
+
+<script type="text/ecmascript"><![CDATA[
+
+bush = {
+  axiom: "F",
+  directions: 20,
+  productions: {
+   F: "FF[++F-F][-F+F][--F-F]"
+  }
+}
+
+function onLoad() {
+  showLSystem(bush, 1, 'path1', 'bush1');
+  showLSystem(bush, 2, 'path2', 'bush2');
+  showLSystem(bush, 3, 'path3', 'bush3');
+  showLSystem(bush, 4, 'path4', 'bush4');
+}
+
+]]>
+</script>
+  <g stroke="black" stroke-width="0.1" stroke-linecap="round" fill="none">
+    <svg id="bush1" preserveAspectRatio="xMinYMin meet" width="300px" height="300px">
+      <path id="path1"/>
+    </svg>
+  </g>
+  <g stroke="black" stroke-width="0.15" stroke-linecap="round" fill="none" transform="translate(200,0)">
+    <svg id="bush2" preserveAspectRatio="xMinYMin meet" width="300px" height="300px">
+      <path id="path2"/>
+    </svg>
+  </g>
+  <g stroke="black" stroke-width="0.15" stroke-linecap="round" fill="none" transform="translate(450,0)">
+    <svg id="bush3" preserveAspectRatio="xMinYMin meet" width="300px" height="300px">
+      <path id="path3"/>
+    </svg>
+  </g>
+  <g stroke="black" stroke-width="0.15" stroke-linecap="round" fill="none" transform="translate(750,0)">
+    <svg id="bush4" preserveAspectRatio="xMinYMin meet" width="300px" height="300px">
+      <path id="path4"/>
+    </svg>
+  </g>
+  
+</svg>
